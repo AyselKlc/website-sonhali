@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+:root{
+    --yellow:#f9ca24;
+
+}
+
+*{
+    font-family:'Nunito',sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all.2s linear;
+}
+
+*::selection{
+    background: var(--yellow);
+    color: #333;
+
+}
+
+html{
+    font: 62.5%;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+        width: 22.4px;
+    }
+    html::-webkit-scrollbar-track{
+        background: #222;
+        }
+html::-webkit-scrollbar-thumb{
+    background: var(--yellow);
+}
+
+body{
+    background: #111;
+    overflow-x: hidden;
+    padding-left: 560px;
+}
+
+section{
+    min-height: 100vh;
+    padding: 16px;
+}
+.btn{
+    padding: 11.2px 48px;
+    background:#333;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 16px;
+    font-size: 32px;
+    border-radius: 80px;
+}
+.btn i{
+    padding: 0 8px;
+    font-size: 30px;
+
+}
+.btn :hover{
+    background: var(--yellow);
+}
+.heading{
+    text-align: center;
+    margin: 0 100px;
+    font-size: 65px;
+    padding: 16px;
+    border-bottom: 2px solid#fff4;
+    color: #fff;
+}
+
+.heading span{
+    color: var(--yellow);
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 560px;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+header .kullanıcı .isim{
+    font-size: 60px;
+    color: #fff;
+}
+header .kullanıcı .post{
+    font-size: 32px;
+    color: #eee;
+}
+
+header .navbar{
+    width: 100%;
+}
+header .navbar ul{
+    list-style: none;
+    padding: 16px 48px;
+}
+
+header .navbar ul li a{
+    display: block;
+    padding: 16px;
+    margin: 24px 0;
+    background: #333;
+    color: #fff;
+    font-size: 32px;
+    border-radius: 80px;
+}
+header .navbar ul li a:hover{
+    background: var(--yellow);
+}
+
+Menü{
+    position: fixed;
+    top: 32px; right: 32px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 56px;
+    padding: 16px 24px;
+    z-index: 1000;
+    display: none;
+}
+.Anasayfa{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 240px;
+}
+.Anasayfa h3{
+    font-size: 40px;
+    color: #fff;
+}
+
+.Anasayfa h1{
+    font-size: 80px;
+    color: #fff;
+}
+
+.Anasayfa h1 span{
+    color: var(--yellow);
+}
+
+.Anasayfa p{
+    font-size: 32px;
+    color: #eee;
+    padding: 16px;
+}
+
+.Hakkımda .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 16px;
+
+}
+
+.Hakkımda .row .info h3{
+    font-size: 32px;
+    color: var(--yellow);
+    padding: 16px 0;
+    font-weight: normal;
+}
+
+.Hakkımda .row .info h3 span{
+    color: #eee;
+    padding: 0 10px;
+}
+
+.İletişim .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.İletişim .row .content{
+    flex:16 16 720px;
+    padding: 64px;
+    padding-bottom: 0;
+}
+.İletişim .row form{
+    flex: 16 16 720px;
+    padding: 32;
+    margin: 32px;
+    margin-bottom: 64px;
+
+}
+.İletişim .row form .box{
+    padding: 24px;
+    margin: 16px 0;
+    background: #3333;
+    color: #fff;
+    text-transform: none;
+    font-size: 28px;
+    width: 100%;
+}
+
+.İletişim .row form .box::placeholder{
+    text-transform: capitalize;
+}
+
+.İletişim .row form .message{
+    height: 240px;
+    resize: none;
+}
+
+.İletişim .row .content .title{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 48px;
+    padding-bottom: 32px;
+}
+.İletişim .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    color: #eee;
+    padding:16px 0;
+    font-weight: normal;
+}
+
+.İletişim .row .content .info h3 i{
+    padding-right: 16px;
+    color: var(--yellow);
+}
+
+.top{
+    position: fixed;
+    bottom: 120px; right: 32px;
+    display: none;
+}
+
